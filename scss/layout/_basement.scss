@@ -1,0 +1,167 @@
+
+
+.basement {
+    background: var(--bg-hero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.basement-text {
+    @include font(null, 14px, 1.7, 0.03em);
+    color: var(--white-color);
+    margin-bottom: 9px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color)
+    }
+}
+
+.basement-mail {
+    @include font(null, 14px, 1.7, 0.03em);
+    text-decoration: none;
+    color: var(--basement-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color)
+    }
+}
+
+.basement-tel {
+    @include font(null, 14px, 1.7, 0.03em);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.basement-contacts {
+    margin-top: 20px;
+}
+
+.basement-soc-text {
+    @include font(null, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.basement-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.soc-icon-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: #2196F3;
+    }
+}
+
+.soc-icon-link:hover .basement-soc-icon,
+.soc-icon-link:focus .basement-soc-icon {
+    background: #2196F3;
+    fill: #FFFFFF;
+}
+
+
+.basement-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.basement-soc-icon {
+    fill: #FFFFFF;
+}
+
+.basement-soc {
+    margin-left: 70px;
+}
+
+.basement-input-wrap {
+    margin-left: auto;
+}
+
+.basement-wrap-flex {
+    display: flex;
+}
+
+.basement-wrap-text {
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.basement-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 16px;
+    outline: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        @include font(null, 16px, 1.25, null);
+        color: rgba(255, 255, 255, 0.6);
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+.basement-input:hover::placeholder,
+.basement-input:focus::placeholder {
+    color: var(--accent-color);
+}
+
+.basement-btn {
+    padding: 10px 32px;
+    margin-left: 12px;
+    display: flex;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: var(--bg-btn-hero-color);
+    }
+}
+
+.basement-wrap-icon {
+    fill: var(--white-color);
+    margin-left: 10px;
+
+}
