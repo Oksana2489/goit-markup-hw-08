@@ -28,6 +28,10 @@ ul {
   padding-left: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -79,6 +83,21 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .flex--bas {
   display: flex;
@@ -86,8 +105,14 @@ img {
 }
 
 .pege-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .pege-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .backdrop {
@@ -479,7 +504,6 @@ img {
 }
 
 .accompaniment {
-  width: 270px;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
@@ -491,6 +515,7 @@ img {
 
 .features__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -503,6 +528,12 @@ img {
   color: var(--team-color);
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__subject {
+    text-align: left;
+  }
 }
 
 .features__text {
@@ -513,7 +544,17 @@ img {
 }
 
 .features__item {
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .work {
