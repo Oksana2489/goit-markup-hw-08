@@ -1,12 +1,16 @@
 .customers__text {
-    @include font(null, 36px, 1.16, 0.03em);
+    @include font(700, 28px, 1.17, 0.03em);
     text-align: center;
     color: #212121;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        @include font(700, 36px, 1.16, 0.03em);
+        margin-bottom: 50px;
+    }
 }
 
 .customers__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border-radius: 4%;
     border: 1px solid #AFB1B8;
@@ -21,12 +25,28 @@
     &:focus {
         border: 1px solid var(--accent-color);
     }
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 
 .customers__list {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+.customers__item {
+    // flex-basis: calc(100% / 2 - 30px);
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 2 - 30px);
+    }
 }
 
 .customers__icon {
