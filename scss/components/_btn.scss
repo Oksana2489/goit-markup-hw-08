@@ -1,4 +1,6 @@
 .btn {
+    width: 200px;
+    height: 50px;
     font-family: inherit;
     @include font(700, 16px, 1.87, 00.06em);
     align-items: center;
