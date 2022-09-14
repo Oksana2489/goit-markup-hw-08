@@ -100,7 +100,7 @@ img {
 }
 
 .flex--bas {
-  display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -904,6 +904,7 @@ img {
   background: var(--bg-hero-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .basement-text {
@@ -955,7 +956,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .basement-item:not(:last-child) {
@@ -987,6 +989,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .basement-soc-icon {
@@ -994,7 +997,7 @@ img {
 }
 
 .basement-soc {
-  margin-left: 70px;
+  margin-left: 0px;
 }
 
 .basement-input-wrap {
@@ -1002,7 +1005,7 @@ img {
 }
 
 .basement-wrap-flex {
-  display: flex;
+  flex-wrap: wrap;
 }
 
 .basement-wrap-text {
@@ -1012,11 +1015,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .basement-input {
-  width: 358px;
+  width: calc(100% - 30px);
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1024,7 +1027,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
   padding: 15px 16px;
   outline: transparent;
+  margin-top: 20px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .basement-input {
+    width: 450px;
+  }
 }
 .basement-input:hover, .basement-input:focus {
   border-color: var(--accent-color);
@@ -1043,7 +1052,9 @@ img {
 
 .basement-btn {
   padding: 10px 32px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   display: flex;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
