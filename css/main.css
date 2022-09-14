@@ -103,6 +103,11 @@ img {
   flex-wrap: wrap;
   align-items: baseline;
 }
+@media screen and (min-width: 768px) {
+  .flex--bas {
+    display: flex;
+  }
+}
 
 .pege-section {
   padding-top: 60px;
@@ -959,6 +964,11 @@ img {
   margin-top: 60px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .basement-soc-text {
+    margin-top: 0;
+  }
+}
 
 .basement-item:not(:last-child) {
   margin-bottom: 9px;
@@ -999,13 +1009,39 @@ img {
 .basement-soc {
   margin-left: 0px;
 }
+@media screen and (min-width: 768px) {
+  .basement-soc {
+    margin-right: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement-soc {
+    margin-right: 0;
+  }
+}
 
 .basement-input-wrap {
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .basement-input-wrap {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement-input-wrap {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 
 .basement-wrap-flex {
   flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .basement-wrap-flex {
+    display: flex;
+  }
 }
 
 .basement-wrap-text {
@@ -1016,6 +1052,13 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .basement-wrap-text {
+    margin-top: 0;
+    text-align: start;
+    margin-left: 93px;
+  }
 }
 
 .basement-input {
@@ -1033,6 +1076,12 @@ img {
 @media screen and (min-width: 480px) {
   .basement-input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement-input {
+    width: 358px;
+    margin-left: 93px;
   }
 }
 .basement-input:hover, .basement-input:focus {
@@ -1058,6 +1107,12 @@ img {
   display: flex;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .basement-btn {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+}
 .basement-btn:hover, .basement-btn:focus {
   background: var(--bg-btn-hero-color);
 }
@@ -1065,6 +1120,19 @@ img {
 .basement-wrap-icon {
   fill: var(--white-color);
   margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .basement-info {
+    margin-right: auto;
+    margin-left: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement-info {
+    margin-left: 0;
+    margin-right: 70px;
+  }
 }
 
 .portfolio-pages-lists {
