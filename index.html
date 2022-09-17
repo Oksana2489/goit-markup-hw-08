@@ -38,21 +38,52 @@
                 </li>
             </ul>
             <button class="mob-button" type="button">
-                <svg class="mob-menu" width="24" height="24">
+                <svg class="button-menu" width="24" height="24">
                     <use href="./img/icons.svg/symbol-defs.svg#icon-menu_24px"></use>
                 </svg>
             </button>
-            
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="mob-container">
+                <button type="button" class="menu-close" data-menu-close>
+                    <svg class="menu-icon" width="24" height="24">
+                        <use href="./img/icons.svg/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <div class="menu-top">
+                    <nav class="navigation-menu">
+                        <ul class="navigation-menu-list list">
+                            <li class="navigation-menu-item"><a href="./index.html" class="navigation-menu-link">Студия</a></li>
+                            <li class="navigation-menu-item"><a href="./portfolio.html" class="navigation-menu-link">Портфолио</a>
+                            </li>
+                            <li class="navigation-menu-item"><a href="#" class="navigation-menu-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-bottom">
+                    <ul class="contacts-menu-list list">
+                        <li class="contacts-menu-item"><a href="tel:+380961111111" class="contacts-menu-tel link">+38 096 111 11 11</a></li>
+                        <li class="contacts-menu-item"><a href="mailto:info@devstudio.com" class="contacts-menu-mail link">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="soc-menu list">
+                        <li class="soc-menu-item"><a href="#" class="social link">Instagram</a></li>
+                        <li class="soc-menu-item"><a href="#" class="social link">Twitter</a></li>
+                        <li class="soc-menu-item"><a href="#" class="social link">Facebook</a></li>
+                        <li class="soc-menu-item"><a href="#" class="social link">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </header>
     <main>
-        <!-- <section class="hero">
+        <section class="hero">
                     <div class="container">
                         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                         <button type="button" class="btn hero__btn" data-modal-open>Заказать услугу</button>
                     </div>
-        </section> -->
-        <!-- <section class="features pege-section">
+        </section>
+        <section class="features pege-section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                     <ul class="features__list list">
@@ -95,8 +126,8 @@
                         </li>
                     </ul>
             </div>
-        </section> -->
-        <!-- <section class="work">
+        </section>
+        <section class="work">
             <div class="container">
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work__list list">
@@ -117,8 +148,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="team pege-section">
+        </section>
+        <section class="team pege-section">
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list list">
@@ -273,8 +304,8 @@
                 </ul>
             </div>
             
-        </section> -->
-        <!-- <section class="customers pege-section">
+        </section>
+        <section class="customers pege-section">
             <div class="container">
                 <h2 class="customers__text">Постоянные клиенты</h2>
                 <ul class="customers__list list">
@@ -304,7 +335,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <footer class="basement">
         <div class="container flex--bas">
@@ -402,5 +433,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
