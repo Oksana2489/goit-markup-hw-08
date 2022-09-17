@@ -17,7 +17,7 @@
 </head>
 
 <body class="body">
-    <!-- <header class="basis">
+    <header class="basis">
         <div class="container container-flex">
             <nav class="navigation">
                 <a lang="en" href="" class="logo logo--margin">Web<span class="logo logo--dark">Studio</span></a>
@@ -31,15 +31,57 @@
                 <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__mail"><svg
                             class="contacts__icon" width="16" height="12">
                             <use href="./img/icons.svg/symbol-defs.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a></li>
+                        </svg>info@devstudio.com</a>
+                </li>
                 <li class="contacts__item"><a href="tel:+380961111111" class="contacts__tel"><svg class="contacts__icon"
                             width="10" height="16">
                             <use href="./img/icons.svg/symbol-defs.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a></li>
+                        </svg>+38 096 111 11 11</a>
+                </li>
             </ul>
-    
+            <button class="mob-button" type="button">
+                <svg class="button-menu" width="24" height="24">
+                    <use href="./img/icons.svg/symbol-defs.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden">
+            <div class="mob-container">
+                <button type="button" class="menu-close" data-menu-close>
+                    <svg class="menu-icon" width="24" height="24">
+                        <use href="./img/icons.svg/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <div class="menu-top">
+                    <nav class="navigation-menu">
+                        <ul class="navigation-menu-list list">
+                            <li class="navigation-menu-item"><a href="./index.html" class="navigation-menu-link">Студия</a>
+                            </li>
+                            <li class="navigation-menu-item"><a href="./portfolio.html"
+                                    class="navigation-menu-link">Портфолио</a>
+                            </li>
+                            <li class="navigation-menu-item"><a href="#" class="navigation-menu-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-bottom">
+                    <ul class="contacts-menu-list list">
+                        <li class="contacts-menu-item"><a href="tel:+380961111111" class="contacts-menu-tel link">+38 096
+                                111 11 11</a></li>
+                        <li class="contacts-menu-item"><a href="mailto:info@devstudio.com"
+                                class="contacts-menu-mail link">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="soc-menu list">
+                        <li class="soc-menu-item"><a href="#" class="social link">Instagram</a></li>
+                        <li class="soc-menu-item"><a href="#" class="social link">Twitter</a></li>
+                        <li class="soc-menu-item"><a href="#" class="social link">Facebook</a></li>
+                        <li class="soc-menu-item"><a href="#" class="social link">LinkedIn</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    </header>
     <main>
         <section class="portfolio pege-section">
             <div class="container">
@@ -177,7 +219,7 @@
         </section>
 
     </main>
-<!-- <footer class="basement">
+<footer class="basement">
             <div class="container flex--bas ">
                 <div class="basement-info">
                     <a lang="en" href="" class="logo">Web<span class="logo logo--light">Studio</span></a>
@@ -223,7 +265,8 @@
                     </div>
                 </div>
             </div>
-</footer> -->
+</footer>
+<script src="./js/menu.js"></script>
 </body>
         
 </html>
